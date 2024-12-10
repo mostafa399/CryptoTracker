@@ -1,4 +1,6 @@
-package com.plcoding.cryptotracker.util
+package com.plcoding.cryptotracker.core.domin.util
+
+import com.plcoding.cryptotracker.crypto.data.dto.CoinsResponseDto
 
 typealias DomainError = Error
 

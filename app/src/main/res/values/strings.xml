@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="error_request_timeout">error_request_timeout\n</string>
+    <string name="error_too_many_requests">error_too_many_requests\n</string>
+    <string name="error_no_internet">error_no_internet\n</string>
+    <string name="error_server_error">error_server_error</string>
+    <string name="error_serialization">error_serialization</string>
+    <string name="error_unknown">error_unknown</string>
 </resources>
