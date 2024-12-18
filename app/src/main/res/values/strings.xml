@@ -6,4 +6,7 @@
     <string name="error_server_error">error_server_error</string>
     <string name="error_serialization">error_serialization</string>
     <string name="error_unknown">error_unknown</string>
+    <string name="market_cap">Market Cap\n</string>
+    <string name="price">Price</string>
+    <string name="change_last_24h">Change Last 24h</string>
 </resources>
