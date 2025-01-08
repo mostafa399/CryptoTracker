@@ -55,14 +55,14 @@ class CoinListViewmodel(
                             x = it.dateTime.hour.toFloat(),
                             y = it.priceUsd.toFloat(),
                             xLabel = DateTimeFormatter.ofPattern("ha\nM/d").format(it.dateTime)
-                        )}
-                        _state.update {
-                            it.copy(
-                                selectedCoin = it.selectedCoin?.copy(
-                                    coinPriceHistory = dataPoints
-                                )
-                            )
-
+                        )
+                    }
+                _state.update {
+                    it.copy(
+                        selectedCoin = it.selectedCoin?.copy(
+                            coinPriceHistory = dataPoints
+                        )
+                    )
                 }
             }.onError { error ->
                 _event.send(CoinListEvent.Error(error))

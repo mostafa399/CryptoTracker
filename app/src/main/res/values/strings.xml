@@ -9,4 +9,5 @@
     <string name="market_cap">Market Cap\n</string>
     <string name="price">Price</string>
     <string name="change_last_24h">Change Last 24h</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>

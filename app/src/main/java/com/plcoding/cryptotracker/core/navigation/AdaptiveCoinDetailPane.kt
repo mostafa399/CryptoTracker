@@ -3,7 +3,6 @@ package com.plcoding.cryptotracker.core.navigation
 import android.widget.Toast
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
 import androidx.compose.material3.adaptive.layout.AnimatedPane
-import androidx.compose.material3.adaptive.layout.ListDetailPaneScaffold
 import androidx.compose.material3.adaptive.layout.ListDetailPaneScaffoldRole
 import androidx.compose.material3.adaptive.navigation.NavigableListDetailPaneScaffold
 import androidx.compose.material3.adaptive.navigation.rememberListDetailPaneScaffoldNavigator
@@ -47,22 +46,25 @@ fun AdaptiveCoinDetailPane(
                 CoinListScreen(
                     state = state,
                     onAction = { action ->
-                            viewModel.onAction(action)
-                            when (action) {
-                                is CoinListAction.OnCoinClick -> {
-                                    navigator.navigateTo(pane = ListDetailPaneScaffoldRole.Detail)
-                                }
-
+                        viewModel.onAction(action)
+                        when (action) {
+                            is CoinListAction.OnCoinClick -> {
+                                navigator.navigateTo(pane = ListDetailPaneScaffoldRole.Detail)
                             }
+
+                        }
                     }
 
                 )
-            } },
+            }
+        },
         detailPane = {
-                AnimatedPane {
-                    CoinDetailsScreen(state=state) }
+            AnimatedPane {
+                CoinDetailsScreen(state = state)
+            }
 
-            },
+        },
         modifier = modifier
 
-        )}
+    )
+}

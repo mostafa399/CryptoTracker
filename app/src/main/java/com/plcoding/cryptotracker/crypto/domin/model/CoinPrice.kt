@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker.crypto.domin
+package com.plcoding.cryptotracker.crypto.domin.model
 
 import java.time.ZonedDateTime
 

@@ -139,7 +139,7 @@ fun CoinDetailsScreen(
                 var totalChartWidth by remember {
                     mutableFloatStateOf(0f)
                 }
-                var ammountOfVisibleDataPoints = if (labelWidth > 0) {
+                val ammountOfVisibleDataPoints = if (labelWidth > 0) {
                     ((totalChartWidth - 2.5 * labelWidth) / labelWidth).toInt()
                 } else 0
                 val startIndex =

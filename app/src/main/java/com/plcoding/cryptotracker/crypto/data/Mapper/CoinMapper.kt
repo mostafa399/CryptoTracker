@@ -2,8 +2,8 @@ package com.plcoding.cryptotracker.crypto.data.Mapper
 
 import com.plcoding.cryptotracker.crypto.data.dto.CoinDto
 import com.plcoding.cryptotracker.crypto.data.dto.CoinPriceDto
-import com.plcoding.cryptotracker.crypto.domin.Coin
-import com.plcoding.cryptotracker.crypto.domin.CoinPrice
+import com.plcoding.cryptotracker.crypto.domin.model.Coin
+import com.plcoding.cryptotracker.crypto.domin.model.CoinPrice
 import java.time.Instant
 import java.time.ZoneId
 

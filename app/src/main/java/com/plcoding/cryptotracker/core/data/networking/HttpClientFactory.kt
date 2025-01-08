@@ -21,11 +21,9 @@ object HttpClientFactory {
                 logger = Logger.ANDROID
             }
             install(ContentNegotiation) {
-                json(
-                    json = Json {
-                        ignoreUnknownKeys = true
-                    }
-                )
+                json(json = Json {
+                    ignoreUnknownKeys = true
+                })
             }
             defaultRequest {
                 contentType(ContentType.Application.Json)
